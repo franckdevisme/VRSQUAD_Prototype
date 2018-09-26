@@ -1,1 +1,1 @@
-# VRSQUAD_Prototype
+VR Squad - Prototype
