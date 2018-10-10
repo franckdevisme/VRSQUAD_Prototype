@@ -7,6 +7,7 @@ public class ChangeRoom : MonoBehaviour
 {
 
     public static ChangeRoom changeRoomInst;
+    public GameObject toMove;
 
     public MeshRenderer[] skyboxPositionsList;
 
@@ -62,6 +63,20 @@ public class ChangeRoom : MonoBehaviour
             skyB.gameObject.SetActive(false);
         }
 
+        // Téléportation du NPC Teacher
+        toMove = GameObject.Find("NPC_Teacher");
+        Vector3 temp = skyboxPositionsList[i].transform.position;
+        temp.x += 0.1f;
+        temp.y += -0.85f;
+        temp.z += 1.4f;
+        toMove.transform.position = temp;
+
+        //Téléportation du NPCGazeAttractor
+        toMove = GameObject.Find("NPCGazeAttractor");
+        temp = skyboxPositionsList[i].transform.position;
+        toMove.transform.position = temp;
+
+        //Téléportation de l'apprenant
         skyboxPositionsList[i].gameObject.SetActive(true);
         PlayerManager.playerManagerInst.playerController.transform.position = skyboxPositionsList[i].transform.position;
         dialogManag.transform.position = skyboxPositionsList[i].transform.position;
