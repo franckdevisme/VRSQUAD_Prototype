@@ -13,31 +13,31 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: TriggerH2
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: TriggerH3
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: PlayerAnswer
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: NextDialogue
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
+  - m_Name: PlayerAnswer
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -150,6 +150,21 @@ MonoBehaviour:
       fuyant ou la tonalit\xE9 de voix non convaincue...\n"
     displayDelay: 5
   pauseDelay: 2
+--- !u!114 &114057291574834066
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7395fd4fc4911bf449d0c34fdb32fd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnswersText:
+  - un entrepreneur
+  - un psychologue
+  - "un c\xE9l\xE8bre business angel"
 --- !u!114 &114082454622624472
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -188,6 +203,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomIndex: 1
+--- !u!114 &114115554039291408
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7395fd4fc4911bf449d0c34fdb32fd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnswersText:
+  - ne se mesure pas
+  - recouvre plusieurs formes
+  - est un concept unique
 --- !u!114 &114133791594389154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -282,6 +312,23 @@ MonoBehaviour:
       par VR SQUAD ?"
     displayDelay: 5
   pauseDelay: 0
+--- !u!114 &114177879230237588
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 87d7b097bdc4d1145b9e874473840ff5, type: 3}
+  dialogue:
+  - textToDisplay: "Est ce que \xE7a va toujours?"
+    displayDelay: 4
+  pauseDelay: 2
 --- !u!114 &114196767835396798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,6 +349,53 @@ MonoBehaviour:
   - textToDisplay: Qui est Howard Gardner ?
     displayDelay: 3
   pauseDelay: 0
+--- !u!114 &114202459439805336
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7395fd4fc4911bf449d0c34fdb32fd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnswersText:
+  - Oui, sans probleme
+  - Oui je m'accroche!
+  - J'aimerais faire une pause
+--- !u!114 &114227769182619846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 444f4be64d6c19943a8676ee3258107f, type: 3}
+  dialogue:
+  - textToDisplay: "L\u2019intelligence spatiale est la \xAB capacit\xE9 de trouver
+      son chemin dans un environnement"
+    displayDelay: 4
+  - textToDisplay: "donn\xE9 et d'\xE9tablir des relations entre les objets dans l'espace
+      \xBB. "
+    displayDelay: 4
+  - textToDisplay: "Elle permet de voir la continuit\xE9 d'une image en rotation dans
+      l'espace, de cr\xE9er une image mentale."
+    displayDelay: 5
+  - textToDisplay: 'Par exemple, elle permet de bien arranger des objets dans un espace
+      comme des valises dans un coffre de voiture un plan de  '
+    displayDelay: 6
+  - textToDisplay: "route pour aller d'un point \xE0 un autre. Elle est utilis\xE9e
+      dans des domaines comme l'architecture, la menuiserie ou l'urbanisme."
+    displayDelay: 6
+  - textToDisplay: "Elle est utile en math\xE9matiques et dans le jeu d'\xE9checs."
+    displayDelay: 4
+  pauseDelay: 1
 --- !u!114 &114227982197024808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -366,6 +460,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   affectedNpcID: 0000000002000000
   targetNpcID: 1
+--- !u!114 &114268187018245234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 469e15c8b7b04674c940db20b6852945, type: 3}
+  dialogue:
+  - textToDisplay: "L'intelligence linguistique consiste \xE0 utiliser le langage
+      pour comprendre les autres et pour exprimer ce que l'on pense. "
+    displayDelay: 5
+  - textToDisplay: "Elle permet l'utilisation de la langue maternelle, mais aussi
+      d'autres langues.\r"
+    displayDelay: 4
+  - textToDisplay: "C'est l'intelligence la plus mise en avant et utilis\xE9e \xE0
+      l'\xE9cole avec l'intelligence logico-math\xE9matique.\r"
+    displayDelay: 4
+  pauseDelay: 1
 --- !u!114 &114271477995179830
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -446,6 +564,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6ccdfdd13ebbd499388d818bb0160e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114329015656590260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7395fd4fc4911bf449d0c34fdb32fd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnswersText:
+  - Le Patheon, Paris
+  - "Le temples de Delphes, Ath\xE8nes"
+  - "Le Colis\xE9e, Rome"
 --- !u!114 &114349485731506918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -474,6 +607,23 @@ MonoBehaviour:
   - "Excellente, j'ach\xE8te !"
   - "Il va falloir encore l'am\xE9liorer"
   - Retirer moi ce casque VR tout de suite !
+--- !u!114 &114362462823849100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: a5939a07d59e5c04cac23b801b40886a, type: 3}
+  dialogue:
+  - textToDisplay: Mais avant de commencer donner moi un synonyme du terme "pitch"
+    displayDelay: 4
+  pauseDelay: 2
 --- !u!114 &114367736123492052
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -492,6 +642,50 @@ MonoBehaviour:
       par VR SQUAD ?"
     displayDelay: 5
   pauseDelay: 0
+--- !u!114 &114385315734699132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 045f4f66f65e306438ad7824e206c296, type: 3}
+  dialogue:
+  - textToDisplay: 'Intelligence linguistique '
+    displayDelay: 0.5
+  - textToDisplay: "L'intelligence linguistique est d\xE9finie par Gardner comme la
+      \xAB capacit\xE9 \xE0 utiliser et \xE0 comprendre les mots et les nuances de
+      sens \xBB. "
+    displayDelay: 5.5
+  - textToDisplay: " Elle est appliqu\xE9e en \xE9criture, en \xE9dition et en traduction
+      en particulier. "
+    displayDelay: 4.5
+  - textToDisplay: "Elle concerne l'entr\xE9e des stimuli linguistiques, et la production
+      de langage."
+    displayDelay: 4.5
+  pauseDelay: 1
+--- !u!114 &114390600455209280
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 90084e5c33e22c74693b9cc9c78db9b6, type: 3}
+  dialogue:
+  - textToDisplay: 'L''intelligence:'
+    displayDelay: 4
+  pauseDelay: 1
 --- !u!114 &114393414363666988
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -533,6 +727,67 @@ MonoBehaviour:
       descriptions \u2013 c\u2019est m\xEAme normal :"
     displayDelay: 5
   pauseDelay: 1
+--- !u!114 &114434319318391414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 88c95e132287f1d4190dc19c538711da, type: 3}
+  dialogue:
+  - textToDisplay: "L'intelligence intra-personnelle permet de se former une repr\xE9sentation
+      de soi pr\xE9cise et fid\xE8le et de l'utiliser efficacement dans la vie."
+    displayDelay: 6
+  - textToDisplay: " Elle sollicite plus le champ des repr\xE9sentations et des images
+      que celui du langage."
+    displayDelay: 4
+  - textToDisplay: "Il s'agit de la capacit\xE9 \xE0 d\xE9crypter ses propres \xE9motions,
+      \xE0 rester ouvert \xE0 ses besoins et \xE0 ses d\xE9sirs."
+    displayDelay: 4
+  - textToDisplay: C'est l'intelligence de l'introspection, de la psychologie analytique.
+    displayDelay: 4
+  - textToDisplay: ' Elle permet d''anticiper sur ses comportements en fonction de
+      la bonne connaissance de soi.'
+    displayDelay: 4
+  - textToDisplay: "Il est possible, mais pas syst\xE9matique, qu'une personne ayant
+      une grande intelligence intrapersonnelle, soit qualifi\xE9e par son entourage
+      de personne \xE9gocentrique."
+    displayDelay: 6
+  - textToDisplay: "L'intelligence intrapersonnelle est en rapport avec la sensibilit\xE9
+      d'une personne \xE0 ses propres potentialit\xE9s et ses limites, ses propres
+      \xE9motions."
+    displayDelay: 6
+  - textToDisplay: "L'intelligence intrapersonnelle est tr\xE8s sollicit\xE9e dans
+      les m\xE9tiers de conseil, de psychologie et psychiatrie.\r\n"
+    displayDelay: 5
+  - textToDisplay: ' Elle permet d''anticiper sur ses comportements en fonction de
+      la bonne connaissance de soi.'
+    displayDelay: 4
+  - textToDisplay: ' Elle permet d''anticiper sur ses comportements en fonction de
+      la bonne connaissance de soi.'
+    displayDelay: 4
+  pauseDelay: 1
+--- !u!114 &114446801395188240
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7395fd4fc4911bf449d0c34fdb32fd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnswersText:
+  - non, toutes les formes sont importantes
+  - "en effet. L'intelligence interpersonnelle est tr\xE8s utile"
+  - "\xE7a d\xE9pend des personnes"
 --- !u!114 &114446951913326938
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -558,6 +813,44 @@ MonoBehaviour:
       dans sa mani\xE8re de s\u2019exprimer."
     displayDelay: 6.5
   pauseDelay: 2
+--- !u!114 &114451132054063328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: cd2bba4cdf727794dab794dbcdb400bd, type: 3}
+  dialogue:
+  - textToDisplay: "L'expression \"connais-toi toi-m\xEAme\" est \xE9crit sur:"
+    displayDelay: 4
+  pauseDelay: 1
+--- !u!114 &114465671163948380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: f0d232d295ba39e4eaf6608f7e020f25, type: 3}
+  dialogue:
+  - textToDisplay: "L'intelligence logico-math\xE9matique permet de r\xE9soudre des
+      probl\xE8mes abstraits de nature logique ou math\xE9matique."
+    displayDelay: 5
+  - textToDisplay: "C'est la capacit\xE9 de manipuler les nombres et de r\xE9soudre
+      des probl\xE8mes logiques."
+    displayDelay: 4
+  pauseDelay: 1
 --- !u!114 &114466810970665530
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -608,6 +901,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc_Index: 1
   animName: Idle
+--- !u!114 &114488165735390086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 45f615d6f4fafda498653a1f4c3314f3, type: 3}
+  dialogue:
+  - textToDisplay: "On la retrouve chez les \xE9crivains et les po\xE8tes, les traducteurs
+      et les interpr\xE8tes."
+    displayDelay: 5
+  - textToDisplay: "Tous les individus qui manipulent le langage \xE0 l'\xE9crit ou
+      \xE0 l'oral utilisent l'intelligence linguistique : orateurs, avocats, po\xE8tes,"
+    displayDelay: 6
+  - textToDisplay: "\xE9crivains, mais aussi les personnes qui ont \xE0 lire et \xE0
+      parler dans leur domaine respectif pour r\xE9soudre des probl\xE8mes, "
+    displayDelay: 5
+  - textToDisplay: " cr\xE9er et comprendre.\r\n"
+    displayDelay: 2
+  pauseDelay: 1
 --- !u!114 &114489376293420146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -623,6 +942,37 @@ MonoBehaviour:
     les intelligences : linguistique\r, spatiale, intra-personnelle, interpersonnelle,
     corporelle-kinesth\xE9sique, musicale et existentielle."
   popUpDuration: 20
+--- !u!114 &114499640496298340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 154f38103a5ef9d459a015c705a1a8f5, type: 3}
+  dialogue:
+  - textToDisplay: "Les personnes qui ont une intelligence logico-math\xE9matique
+      d\xE9velopp\xE9e poss\xE8dent la capacit\xE9 de calculer, "
+    displayDelay: 5
+  - textToDisplay: "de mesurer, de faire preuve de logique et de r\xE9soudre des probl\xE8mes
+      math\xE9matiques et scientifiques. "
+    displayDelay: 5
+  - textToDisplay: "Elles analysent les causes et les cons\xE9quences d'un ph\xE9nom\xE8ne
+      ou d'une action."
+    displayDelay: 3.5
+  - textToDisplay: " Elles peuvent cat\xE9goriser et ordonner les objets."
+    displayDelay: 3
+  - textToDisplay: "L'intelligence logico-math\xE9matique est, selon Gardner, particuli\xE8rement
+      utile dans les sciences, "
+    displayDelay: 5.5
+  - textToDisplay: "les affaires ou encore en m\xE9decine."
+    displayDelay: 2
+  pauseDelay: 1
 --- !u!114 &114531500786844788
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -638,6 +988,39 @@ MonoBehaviour:
   audioclip: {fileID: 0}
   dialogue: []
   pauseDelay: 0
+--- !u!114 &114547473474094506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7395fd4fc4911bf449d0c34fdb32fd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnswersText:
+  - Un discours super court et convaincant
+  - Un discours aussi agreable qu'une brioche
+  - Un discours officiel
+--- !u!114 &114568035120125840
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: fa730b8bbcba63648956506aa904780c, type: 3}
+  dialogue:
+  - textToDisplay: "Une forme pr\xE9cise d\u2019intelligence va particuli\xE8rement
+      nous servir pour le pitch:"
+    displayDelay: 4
+  pauseDelay: 2
 --- !u!114 &114570308886668940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -727,6 +1110,27 @@ MonoBehaviour:
       ne pas oublier et \xE0 d\xE9rouler dans cet ordre."
     displayDelay: 6
   pauseDelay: 2
+--- !u!114 &114618529813649118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: f768131f168b8ee469b0578912b777f4, type: 3}
+  dialogue:
+  - textToDisplay: " Gardner souligne que les math\xE9matiques ne font pas appel seulement
+      \xE0 la logique mais \xE9galement \xE0 la capacit\xE9"
+    displayDelay: 5
+  - textToDisplay: " de manipuler de longues cha\xEEnes de relations logiques exprim\xE9es
+      sous des formes symboliques"
+    displayDelay: 4
+  pauseDelay: 0
 --- !u!114 &114639553383578750
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -899,6 +1303,27 @@ MonoBehaviour:
   - textToDisplay: "Concr\xE8tement, \xE7a peut donner :"
     displayDelay: 2
   pauseDelay: 0
+--- !u!114 &114732944672508222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 541f0c698524d9749801b42123b8cd72, type: 3}
+  dialogue:
+  - textToDisplay: "L'intelligence linguistique est aussi la capacit\xE9 \xE0 comprendre
+      comment le langage affecte "
+    displayDelay: 4
+  - textToDisplay: "les \xE9motions dans le cas des rh\xE9toriciens, \xE9crivains
+      et po\xE8tes, par exemple."
+    displayDelay: 4
+  pauseDelay: 1
 --- !u!114 &114735812026733086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1131,6 +1556,23 @@ MonoBehaviour:
       avec des h\xF4pitaux, des structures sp\xE9cialis\xE9es, et des chercheurs. "
     displayDelay: 4
   pauseDelay: 0
+--- !u!114 &114896918932873300
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee55f61d436d52c4492c97a91066cf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc_Index: 0
+  audioclip: {fileID: 8300000, guid: 1689be343e791b848874b6bc9faa8328, type: 3}
+  dialogue:
+  - textToDisplay: 'Howard Gardner est:'
+    displayDelay: 4
+  pauseDelay: 2
 --- !u!114 &114967474648333446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1168,6 +1610,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff52e715665f2b4ca841590d71c5f07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1101 &1101001223375118400
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102945997480788920}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101007713508952714
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -1441,6 +1904,102 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101116921781667914
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102733316584170094}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101118477401808558
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102920781806487346}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101122657115741504
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102870283974151552}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101137932758431670
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102348160682159360}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101155967352179916
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1525,6 +2084,27 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102103479352254094}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101171518332381690
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102310739929718490}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1909,6 +2489,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101311166643130110
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102548296440842442}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101315727256849394
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1957,6 +2561,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101344606361795338
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102974387201746594}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101345732647709966
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -1969,6 +2597,30 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102103479352254094}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101349076656470472
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102160793132811320}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2017,6 +2669,27 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102261322678718116}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101356575373894166
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102301236244919296}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2095,30 +2768,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101391770879210882
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextDialogue
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102984288545421112}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &1101394029566820396
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -2161,6 +2810,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101430830182499042
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102641825916717550}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101434191040332688
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2173,6 +2846,30 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102646291278846086}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101494853969758992
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: PlayerAnswer
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102984288545421112}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2218,6 +2915,54 @@ AnimatorStateTransition:
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102308203733060062}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101508641332899426
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102974387201746594}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101514885759869796
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102056390048737028}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2323,6 +3068,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101533485860339216
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102658183227526064}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101536050464204266
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2359,6 +3128,30 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102261322678718116}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101538652321844284
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102301236244919296}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2428,6 +3221,30 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102443806012059088}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101560605470502666
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102974387201746594}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2512,6 +3329,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101591410404914806
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102548296440842442}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101595621178184172
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2560,6 +3401,27 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101639600841655788
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102215127034282390}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101642098334646862
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2569,6 +3431,30 @@ AnimatorStateTransition:
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102902085052054186}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101646930599688522
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102294345640057008}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2626,6 +3512,51 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101675622249048684
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102766652286515480}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101679789636444714
+AnimatorStateTransition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102455630837017110}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101694555299542682
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2659,30 +3590,6 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102356773420622000}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101704601676102300
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextDialogue
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102870283974151552}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2806,6 +3713,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101763671020140004
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102487220080564952}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101768450690388316
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -2902,7 +3833,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101809886144554626
+--- !u!1101 &1101837180227037670
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2913,7 +3844,7 @@ AnimatorStateTransition:
     m_ConditionEvent: NextDialogue
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102548296440842442}
+  m_DstState: {fileID: 1102274813062231106}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -3043,30 +3974,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101866372502312162
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextDialogue
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102974387201746594}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &1101886939590702666
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3108,27 +4015,6 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101901917941798616
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102310739929718490}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -3214,6 +4100,72 @@ AnimatorStateTransition:
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102781367256853836}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101959215753998618
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102343844378200262}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101959417275664620
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102696971054334608}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101960924512478838
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102580273303318114}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -3313,6 +4265,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101991091545277934
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102676916265663798}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101993304476871072
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -3329,6 +4305,30 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 5
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101999692327960602
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextDialogue
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102508778525577660}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -3388,6 +4388,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102056390048737028
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Qu
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101001223375118400}
+  m_StateMachineBehaviours:
+  - {fileID: 114177879230237588}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102103479352254094
 AnimatorState:
   serializedVersion: 5
@@ -3429,6 +4456,33 @@ AnimatorState:
   - {fileID: 1101955284840347136}
   m_StateMachineBehaviours:
   - {fileID: 114271477995179830}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102160793132811320
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Qb
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101430830182499042}
+  m_StateMachineBehaviours:
+  - {fileID: 114362462823849100}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -3505,9 +4559,35 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101866372502312162}
+  - {fileID: 1101991091545277934}
   m_StateMachineBehaviours:
   - {fileID: 114164616293075334}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102215127034282390
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue III
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: 114268187018245234}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -3528,7 +4608,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ShowPlayerAnswers 2
+  m_Name: ShowPlayerAnswers 2O
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3536,6 +4616,33 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: 114870802948284676}
   - {fileID: 114291528156475224}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102274813062231106
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue V
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101960924512478838}
+  m_StateMachineBehaviours:
+  - {fileID: 114465671163948380}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -3604,6 +4711,60 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102294345640057008
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue VIII
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101533485860339216}
+  m_StateMachineBehaviours:
+  - {fileID: 114227769182619846}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102301236244919296
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ShowPlayerAnswers 4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101118477401808558}
+  m_StateMachineBehaviours:
+  - {fileID: 114115554039291408}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102308203733060062
 AnimatorState:
   serializedVersion: 5
@@ -3639,7 +4800,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101391770879210882}
+  - {fileID: 1101349076656470472}
   m_StateMachineBehaviours:
   - {fileID: 114639553383578750}
   - {fileID: 114821867550509242}
@@ -3696,6 +4857,60 @@ AnimatorState:
   - {fileID: 1101621478790592572}
   m_StateMachineBehaviours:
   - {fileID: 114172805119414282}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102343844378200262
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ShowPlayerAnswers 1
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101675622249048684}
+  m_StateMachineBehaviours:
+  - {fileID: 114329015656590260}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102348160682159360
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue VII
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101646930599688522}
+  m_StateMachineBehaviours:
+  - {fileID: 114499640496298340}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -3909,6 +5124,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102427338402183274
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue IV
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101837180227037670}
+  m_StateMachineBehaviours:
+  - {fileID: 114488165735390086}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102443806012059088
 AnimatorState:
   serializedVersion: 5
@@ -3923,6 +5165,87 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: 114353665495081492}
   - {fileID: 114349485731506918}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102455630837017110
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ShowPlayerAnswers 2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101508641332899426}
+  m_StateMachineBehaviours:
+  - {fileID: 114057291574834066}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102487220080564952
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Qd
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101538652321844284}
+  m_StateMachineBehaviours:
+  - {fileID: 114390600455209280}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102508778525577660
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue I
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101959417275664620}
+  m_StateMachineBehaviours:
+  - {fileID: 114385315734699132}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -4028,7 +5351,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101704601676102300}
+  - {fileID: 1101763671020140004}
   m_StateMachineBehaviours:
   - {fileID: 114229181895893574}
   - {fileID: 114808993693979710}
@@ -4058,6 +5381,60 @@ AnimatorState:
   m_Transitions: []
   m_StateMachineBehaviours:
   - {fileID: 114468859136630616}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102580273303318114
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue VI
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101137932758431670}
+  m_StateMachineBehaviours:
+  - {fileID: 114618529813649118}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102641825916717550
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ShowPlayerAnswers 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101494853969758992}
+  m_StateMachineBehaviours:
+  - {fileID: 114547473474094506}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -4126,6 +5503,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102658183227526064
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue IX
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101122657115741504}
+  m_StateMachineBehaviours:
+  - {fileID: 114434319318391414}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102670073431412826
 AnimatorState:
   serializedVersion: 5
@@ -4153,6 +5557,60 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102676916265663798
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Qa
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101959215753998618}
+  m_StateMachineBehaviours:
+  - {fileID: 114451132054063328}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102696971054334608
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Teacher_Dialogue II
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101639600841655788}
+  m_StateMachineBehaviours:
+  - {fileID: 114732944672508222}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102708118764128486
 AnimatorState:
   serializedVersion: 5
@@ -4165,6 +5623,33 @@ AnimatorState:
   m_Transitions: []
   m_StateMachineBehaviours:
   - {fileID: 114661169000748616}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &1102733316584170094
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ShowPlayerAnswers 5
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101999692327960602}
+  m_StateMachineBehaviours:
+  - {fileID: 114446801395188240}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -4231,6 +5716,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102766652286515480
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Qc
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101679789636444714}
+  m_StateMachineBehaviours:
+  - {fileID: 114896918932873300}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102771504054096332
 AnimatorState:
   serializedVersion: 5
@@ -4271,7 +5783,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101901917941798616}
+  - {fileID: 1101171518332381690}
   m_StateMachineBehaviours:
   - {fileID: 114100222985351060}
   m_Position: {x: 50, y: 50, z: 0}
@@ -4454,6 +5966,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102920781806487346
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Qe
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101116921781667914}
+  m_StateMachineBehaviours:
+  - {fileID: 114568035120125840}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102926746360512568
 AnimatorState:
   serializedVersion: 5
@@ -4481,6 +6020,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102945997480788920
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ShowPlayerAnswers 3
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101591410404914806}
+  m_StateMachineBehaviours:
+  - {fileID: 114202459439805336}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102974387201746594
 AnimatorState:
   serializedVersion: 5
@@ -4491,7 +6057,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101809886144554626}
+  - {fileID: 1101514885759869796}
   m_StateMachineBehaviours:
   - {fileID: 114413756364139564}
   - {fileID: 114489376293420146}
@@ -4575,85 +6141,85 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102353855506720908}
-    m_Position: {x: 1188, y: 708, z: 0}
+    m_Position: {x: 1284, y: 720, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102670073431412826}
-    m_Position: {x: 972, y: 804, z: 0}
+    m_Position: {x: 1068, y: 852, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102740460482640142}
-    m_Position: {x: 1188, y: 804, z: 0}
+    m_Position: {x: 1284, y: 852, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102544106954333494}
-    m_Position: {x: 1404, y: 804, z: 0}
+    m_Position: {x: 1500, y: 852, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102003477120489096}
-    m_Position: {x: 1188, y: 936, z: 0}
+    m_Position: {x: 1284, y: 984, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102312358348583298}
-    m_Position: {x: 516, y: 204, z: 0}
+    m_Position: {x: 360, y: -216, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102926746360512568}
-    m_Position: {x: 1404, y: 1116, z: 0}
+    m_Position: {x: 1500, y: 1164, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102356773420622000}
-    m_Position: {x: 1188, y: 1116, z: 0}
+    m_Position: {x: 1284, y: 1164, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102654045263628138}
-    m_Position: {x: 972, y: 1116, z: 0}
+    m_Position: {x: 1068, y: 1164, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102384266024993560}
-    m_Position: {x: 1188, y: 1020, z: 0}
+    m_Position: {x: 1284, y: 1068, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102261322678718116}
-    m_Position: {x: 1188, y: 1236, z: 0}
+    m_Position: {x: 1284, y: 1284, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102310739929718490}
-    m_Position: {x: 744, y: 252, z: 0}
+    m_Position: {x: 24, y: 192, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102984288545421112}
-    m_Position: {x: 960, y: 252, z: 0}
+    m_Position: {x: 720, y: 192, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102559440735451992}
     m_Position: {x: -828, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102646291278846086}
-    m_Position: {x: 1176, y: 372, z: 0}
+    m_Position: {x: 1056, y: 480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102915126214598702}
-    m_Position: {x: 1188, y: 468, z: 0}
+    m_Position: {x: 1284, y: 480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102390841147319038}
-    m_Position: {x: 1188, y: 636, z: 0}
+    m_Position: {x: 1284, y: 648, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102277313847732624}
-    m_Position: {x: 1164, y: 252, z: 0}
+    m_Position: {x: 720, y: 252, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102519454724872268}
-    m_Position: {x: 1176, y: 312, z: 0}
+    m_Position: {x: 492, y: 252, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102204021109787232}
-    m_Position: {x: 960, y: 312, z: 0}
+    m_Position: {x: 264, y: 252, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102974387201746594}
-    m_Position: {x: 744, y: 312, z: 0}
+    m_Position: {x: 708, y: 312, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102548296440842442}
-    m_Position: {x: 744, y: 372, z: 0}
+    m_Position: {x: 264, y: 372, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102870283974151552}
-    m_Position: {x: 960, y: 372, z: 0}
+    m_Position: {x: 1056, y: 564, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102860374880481652}
-    m_Position: {x: 1164, y: 1920, z: 0}
+    m_Position: {x: 1272, y: 1884, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102308203733060062}
-    m_Position: {x: 264, y: 492, z: 0}
+    m_Position: {x: 48, y: 36, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102979355434383870}
-    m_Position: {x: 1188, y: 552, z: 0}
+    m_Position: {x: 1284, y: 564, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102103479352254094}
-    m_Position: {x: 1164, y: 1800, z: 0}
+    m_Position: {x: 1272, y: 1764, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102823925002752822}
     m_Position: {x: -276, y: 60, z: 0}
@@ -4668,38 +6234,101 @@ AnimatorStateMachine:
     m_Position: {x: -492, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102288190587923746}
-    m_Position: {x: 1392, y: 1560, z: 0}
+    m_Position: {x: 1500, y: 1524, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102336525751496502}
-    m_Position: {x: 1176, y: 1560, z: 0}
+    m_Position: {x: 1284, y: 1524, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102902085052054186}
-    m_Position: {x: 960, y: 1560, z: 0}
+    m_Position: {x: 1068, y: 1524, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102443806012059088}
-    m_Position: {x: 1176, y: 1680, z: 0}
+    m_Position: {x: 1284, y: 1644, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102044514638993868}
     m_Position: {x: -492, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102771504054096332}
-    m_Position: {x: 1176, y: 1428, z: 0}
+    m_Position: {x: 1284, y: 1392, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102528848647293644}
-    m_Position: {x: 1164, y: 2040, z: 0}
+    m_Position: {x: 1272, y: 2004, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102781367256853836}
-    m_Position: {x: 516, y: 588, z: 0}
+    m_Position: {x: 360, y: 84, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102366629550584086}
-    m_Position: {x: 516, y: 348, z: 0}
+    m_Position: {x: 360, y: -12, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102160793132811320}
+    m_Position: {x: 264, y: 192, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102641825916717550}
+    m_Position: {x: 492, y: 204, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102343844378200262}
+    m_Position: {x: 24, y: 312, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102676916265663798}
+    m_Position: {x: 24, y: 252, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102766652286515480}
+    m_Position: {x: 264, y: 312, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102455630837017110}
+    m_Position: {x: 492, y: 312, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102945997480788920}
+    m_Position: {x: 492, y: 372, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102056390048737028}
+    m_Position: {x: 708, y: 372, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102487220080564952}
+    m_Position: {x: 24, y: 372, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102301236244919296}
+    m_Position: {x: 24, y: 432, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102733316584170094}
+    m_Position: {x: 480, y: 432, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102920781806487346}
+    m_Position: {x: 264, y: 432, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102508778525577660}
+    m_Position: {x: 708, y: 432, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102696971054334608}
+    m_Position: {x: 708, y: 492, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102215127034282390}
+    m_Position: {x: 480, y: 492, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102427338402183274}
+    m_Position: {x: 252, y: 492, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102274813062231106}
+    m_Position: {x: 24, y: 492, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102580273303318114}
+    m_Position: {x: 24, y: 552, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102348160682159360}
+    m_Position: {x: 252, y: 552, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102294345640057008}
+    m_Position: {x: 480, y: 552, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102658183227526064}
+    m_Position: {x: 708, y: 552, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 108, y: 72, z: 0}
-  m_EntryPosition: {x: 516, y: 108, z: 0}
-  m_ExitPosition: {x: 108, y: 24, z: 0}
+  m_AnyStatePosition: {x: 72, y: -96, z: 0}
+  m_EntryPosition: {x: 384, y: -324, z: 0}
+  m_ExitPosition: {x: 72, y: -144, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102312358348583298}
