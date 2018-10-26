@@ -246,7 +246,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/VRSQUAD_Prototype/Assets/Misc/vrsquad.keystore
+  AndroidKeystoreName: C:/Users/altah/Desktop/Vr squad/VRSQUAD_Prototype/Assets/Misc/vrsquad.keystore
   AndroidKeyaliasName: vrsquad
   AndroidTVCompatibility: 0
   AndroidIsGame: 1

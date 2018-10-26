@@ -21,10 +21,10 @@ public class ChangeRoom : MonoBehaviour
 
         changeRoomInst = this;
 
-        if (FindObjectsOfType(GetType()).Length > 1)
+ /*       if (FindObjectsOfType(GetType()).Length > 1)
         {
             Destroy(gameObject);
-        }
+        }*/
 
 
         skyboxPositionsList = GetComponentsInChildren<MeshRenderer>();
